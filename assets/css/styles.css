@@ -1,0 +1,205 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+.navbar .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    padding: 20px;
+}
+.nav {
+    display:flex;
+}
+
+.nav li {
+    margin-right: 20px;
+    padding: 20px;
+}
+
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px dashed white;
+    height: 200px;
+    text-align:center;
+}
+
+.aboutMe .container {
+    display: flex;
+    align-items: center;
+
+}
+
+.meBox {
+    padding: 40px;
+}
+
+.meBox1 { 
+    border-right: 2px solid white;
+}
+
+.work .container {
+    display: flex;
+    align-items: stretch;
+    /* align-items: center; */
+    /* margin-bottom:50px; */
+} 
+
+.titles{
+    border-right: 2px solid white;
+    padding: 45px;
+}
+
+.boxes {
+    display: flex;
+    height:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px ; 
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+}
+
+img:hover{
+    -webkit-filter:none;
+}
+
+.workBox:nth-child(1) {
+    width: 100%;
+  }
+
+.workBox {
+    width: 48%;
+    margin-bottom: 2%;
+    position: relative;
+    background-color: rgb(56, 51, 51);
+}
+
+.workBox:hover {
+    background-color:thistle;
+    border: rgba(166, 211, 5, 0.658) 5px solid;
+    transition: .5s ease;
+    filter: alpha(opacity=30);
+}
+
+.caption {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    background-color:black;
+    width:250px;
+    border-left: 1px dashed rgb(166, 211, 5);
+    border-bottom: 1px solid rgb(166, 211, 5);
+}
+
+.caption:hover{
+    transition: .5s ease;
+    /* background-color: black; */
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.footerItems:nth-child(1){
+    border-right: 2px solid white;
+    padding-right:15px;
+}
+
+.footerItems {
+    display: flex;
+}
+
+.footerItems li {
+    padding: 20px;
+}
+
+.footerItems a {
+    text-decoration: rgb(166, 211, 5) wavy underline;
+}
+.footerItems a:hover {
+    text-decoration: rgba(166, 211, 5, 0.541) wavy underline;
+    transition: .5s ease;
+}
+
+.copyright {
+    text-align:right;
+    padding:20px;
+}
+
+@media only screen and (max-width: 600px) { 
+    
+    body {
+        text-align: center;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+     .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titles {
+        border-bottom: 2px solid white;
+        padding: 20px;
+        border-right:none;
+        margin-bottom: 20px;
+    }
+
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutMe .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .boxes {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .workBox {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .footerItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media only screen and (min-width: 600px) and  (max-width: 992px) { 
+.footerItems {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
