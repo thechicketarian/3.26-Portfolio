@@ -1,5 +1,5 @@
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -26,7 +26,6 @@
     margin-right: 20px;
     padding: 20px;
 }
-
 
 
 header .container {
@@ -77,6 +76,7 @@ img {
 }
 
 img:hover{
+    transition: .5s ease;
     -webkit-filter:none;
 }
 
@@ -91,19 +91,19 @@ img:hover{
     background-color: rgb(56, 51, 51);
 }
 
-.workBox:hover {
+/* .workBox:hover {
     background-color:thistle;
     border: rgba(166, 211, 5, 0.658) 5px solid;
     transition: .5s ease;
     filter: alpha(opacity=30);
-}
+} */
 
 .caption {
     padding: 10px;
     position: absolute;
     bottom: 0;
     background-color:black;
-    width:250px;
+    width:80%;
     border-left: 1px dashed rgb(166, 211, 5);
     border-bottom: 1px solid rgb(166, 211, 5);
 }
@@ -112,6 +112,22 @@ img:hover{
     transition: .5s ease;
     /* background-color: black; */
 
+}
+
+.caption-links {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: rgb(95, 95, 95) wavy underline;
+}
+a:hover {
+    transition: .5s ease;
+    color: rgb(166, 211, 5);
+    text-decoration: rgb(166, 211, 5) wavy underline;
 }
 
 footer .container {
@@ -144,6 +160,24 @@ footer .container {
 .copyright {
     text-align:right;
     padding:20px;
+}
+
+/* Interior page CSS  */
+
+.projectHeader {
+    background-color: azure;
+    color:black;
+    max-width: 100%;
+}
+
+.conceptBox {
+    /* text-align: center; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.conceptBox div {
+    text-align: left;
 }
 
 @media only screen and (max-width: 600px) { 
@@ -194,6 +228,16 @@ footer .container {
     .footerItems {
         display: flex;
         flex-direction: column;
+    }
+
+    .caption-links {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .caption-links a {
+        /* padding-top: 10px; */
+        padding-bottom: 10px;
     }
 
 }
