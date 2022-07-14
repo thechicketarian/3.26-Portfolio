@@ -1,9 +1,14 @@
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
 }
 
+.homepageBorder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .navbar .logo {
     font-size: x-large;
@@ -32,7 +37,7 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 2px dashed white;
+    border: 5px dotted white;
     height: 200px;
     text-align:center;
 }
@@ -46,9 +51,8 @@ header .container {
 .meBox {
     padding: 40px;
 }
-
-.meBox1 { 
-    border-right: 2px solid white;
+.meBox2 {
+    width: 75%;
 }
 
 .work .container {
@@ -59,7 +63,7 @@ header .container {
 } 
 
 .titles{
-    border-right: 2px solid white;
+    border-bottom: 2px solid white;
     padding: 45px;
 }
 
@@ -197,6 +201,15 @@ footer .container {
         align-items: center;
     }
 
+    .homepageBorder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .meBox2 {
+        width: 100%;
+    }
+
     .titles {
         border-bottom: 2px solid white;
         padding: 20px;
@@ -208,11 +221,6 @@ footer .container {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .aboutMe .container {
-        display: flex;
-        align-items: center;
     }
 
     .boxes {
